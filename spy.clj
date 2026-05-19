@@ -20,7 +20,7 @@
   (spy "Sumando" numbers) ;; Espía el 'numbers' en cada llamada recursiva
   (if (empty? numbers)
     0
-    (+ (first numbers) (sum-recursive (rest numbers))))
+    (+ (first numbers) (spy "res" (sum-recursive (rest numbers)))))
 )
 
 (sum-recursive [1 2 3 4])

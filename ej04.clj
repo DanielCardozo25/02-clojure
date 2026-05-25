@@ -2,3 +2,8 @@
 color de 32 bits y devuelvan, respectivamente, los valores de las componentes rojo,
 verde, azul y alfa (RGBA: red, green, blue, alpha) del mismo*/
 
+(defn alpha [x] (println "Alfa: "(bit-and x 0xFF))) 
+(defn green [x] (println "Verde: " (bit-and (bit-shift-right x 16) 0xFF)))
+(defn blue [x] (println "Azul: "(bit-and (bit-shift-right x 8) 0xFF))) 
+(defn red [x] (println "Azul: "(bit-and (bit-shift-right x 24) 0xFF))) 
+(defn color [x] (do (red x)(green x)(blue x)(alpha x) "Ejecutadi con extito!!!"))

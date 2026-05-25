@@ -17,3 +17,7 @@
 (defn segundos [d h m s] (if (or (neg? d) (neg? h) (neg? m) (neg? s)) 
                            (println "Alguno de los valores ingresados es invalido (negativo)") 
                            (+ (days_to_sec d) (hours_to_sec h) (minutes_to_sec m) s)))
+
+; Mi versión
+
+(defn segundos [d h m s](+ s (* 60 m) (* 3600 m) (* 86400 d)))

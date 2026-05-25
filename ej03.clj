@@ -25,3 +25,6 @@
 (defn sig-mul-10-baluja [a]
     (+ a (- 10 (mod a 10)))
 )
+
+;Mi versio dado que el enunciado dice todos los nros enteros se incluye a los negativos y al cero
+(defn sig-mul-10 [x] (int(* 10 x)))

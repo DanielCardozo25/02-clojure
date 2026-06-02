@@ -1,1 +1,2 @@
 Para el parcial "SPY" - "RECUR". Releerlo.
+No aplicar TDD, Pensar primero como Estructura y luego lo interno
